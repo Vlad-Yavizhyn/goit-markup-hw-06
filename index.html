@@ -125,15 +125,9 @@
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="work-list">
-            <div class="work-thumb-one">
-              <li><img src="./images/img.jpg" alt="desktop with monitors" width="370" /></li>
-            </div>
-            <div class="work-thumb-two">
-              <li><img src="./images/box2.jpg" alt="man working on laptop" width="370" /></li>
-            </div>
-            <div class="work-thumb-three">
-              <li><img src="./images/box3.jpg" alt="man working on a tablet" width="370" /></li>
-            </div>
+              <li class="work-thumb-one"><img src="./images/img.jpg" alt="desktop with monitors" width="370" /></li>
+              <li class="work-thumb-two"><img src="./images/box2.jpg" alt="man working on laptop" width="370" /></li>
+              <li class="work-thumb-three"><img src="./images/box3.jpg" alt="man working on a tablet" width="370" /></li>
           </ul>
         </div>
       </section>
@@ -403,15 +397,14 @@
         <div class="submit-box">
           <p class="join-text">ПОДПЕШИТЕСЬ НА РАССЫЛКУ</p>
           <form class="form js-speaker-form">
-            <label>
-              <input type="email" name="email" placeholder="E-mail"  class="submit-input" />
-            </label>
+            <label for="email"></label>
+              <input type="email" name="email" placeholder="E-mail" id="email"  class="submit-input" />
             <div class="submit-wrap">
               <button type="submit" class="submit-button">Подписаться</button>
             <svg class="submit-icon" width="24px" height="24px">
               <use href="./images/icons.svg#icon-send"></use>
-            </div>
             </svg>
+          </div>
           </form>
         </div>
       </div>
