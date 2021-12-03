@@ -376,7 +376,18 @@ font-style: normal;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   font-size: 12px;
+  outline: none;
+  transition: border-color 250ms var(--timing-function);
 }
+
+.modal-form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-form-input:focus + .input-icon {
+  fill: var(--accent-color);
+}
+
 
 .modal-form-textarea {
   width: 100%;
@@ -386,6 +397,12 @@ font-style: normal;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms var(--timing-function);
+}
+
+.modal-form-textarea:focus {
+  border-color: var(--accent-color);
 }
 
 .modal-form-checkbox {
@@ -426,6 +443,17 @@ color: #757575;
   border-radius: 4px;
 }
 
+.modal-form-wrap {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  display: flex;
+  top: 11px;
+  transform: translateX(12px);
+  transition: fill 250ms var(--timing-function);
+}
 
 /* benefits */
 
