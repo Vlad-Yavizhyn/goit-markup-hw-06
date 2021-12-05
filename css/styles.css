@@ -320,12 +320,12 @@ img {
   position: absolute;
   display: flex;
   align-items: center;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
-  margin-left: 490px;
-  margin-top: 8px;
+  /* margin-left: 490px; */
+  /* margin-top: 8px; */
   margin-right: 8px;
 
   background: #ffffff;
@@ -350,7 +350,7 @@ img {
 .form-text {
   margin-bottom: 12px;
   font-family: Roboto;
-font-style: normal;
+  font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
@@ -360,8 +360,9 @@ font-style: normal;
 }
 
 .modal-text {
+  display: block;
   margin-bottom: 4px;
-  line-height: 0.33;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -369,7 +370,7 @@ font-style: normal;
 .modal-form-input{
   width: 100%;
   height: 40px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   padding: 0px;
   padding-left: 42px;
   padding-right: 15px;
@@ -405,14 +406,14 @@ font-style: normal;
   border-color: var(--accent-color);
 }
 
-.modal-form-checkbox {
+/* .modal-form-checkbox {
   width: 16px;
   height: 15px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
-}
+} */
 
 .modal-form-checkbox:checked + .modal-checkbox-text .check-item {
   background-color: var(--accent-color);
@@ -426,6 +427,7 @@ font-style: normal;
 }
 
 .modal-checkbox-text {
+  justify-content: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -436,12 +438,14 @@ font-style: normal;
 
 .modal-send-button {
   border: transparent;
+  display: block;
   width: 200px;
   height: 50px;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  margin-left: 125px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30px;
   cursor: pointer;
   color: #FFFFFF;
@@ -452,6 +456,7 @@ font-style: normal;
 
 .modal-form-wrap {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .input-icon {
@@ -824,7 +829,7 @@ font-style: normal;
 }
 
 .footer-block {
-  display: block;
+  flex-grow: 1;
 }
 
 .footer-box {
@@ -837,6 +842,7 @@ font-style: normal;
 }
 
 .join-text {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -886,6 +892,9 @@ font-style: normal;
 }
 
 .submit-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: transparent;
   width: 200px;
   height: 50px;
@@ -899,8 +908,7 @@ font-style: normal;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   border-radius: 4px;
-  padding: 10px 62px 10px 29px;
-  margin-top: 20px;
+  padding: 10px 29px 10px 29px;
 }
 
 .submit-button:hover,
@@ -908,16 +916,8 @@ font-style: normal;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
   0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.submit-wrap {
-  position: relative;
-}
 
 .submit-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(100%);
-  margin-left: 20px;
   fill: #ffffff;
 }
 
@@ -929,7 +929,6 @@ font-style: normal;
 .submit-input {
   width: 358px;
   height: 50px;
-  margin-top: 20px;
   margin-right: 12px;
   padding-left: 16px;
   font-style: normal;
